@@ -2,6 +2,9 @@
 
 > **DocuLens** is an advanced, domain-aware document intelligence and evidentiary investigation enclave designed for deep multi-document cross-examination, domain-specific NLP synthesis (ML/AI research papers, rulebooks, financial records, and legal filings), interactive knowledge graph visualization, and audit-ready PDF executive report generation.
 
+🌐 **Live Vercel Deployment**: [https://temporary-quick-celesta-veunj3a.vercel.app/](https://temporary-quick-celesta-veunj3a.vercel.app/)  
+🐙 **GitHub Repository**: [https://github.com/SanjanaTech19/DocuLens](https://github.com/SanjanaTech19/DocuLens)
+
 ---
 
 ## 🚨 Problem Addressed
