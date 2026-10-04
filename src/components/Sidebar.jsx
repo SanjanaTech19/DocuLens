@@ -34,7 +34,7 @@ export default function Sidebar({
           </div>
           <div>
             <h1 className="font-bold text-white text-lg tracking-tight flex items-center gap-1 font-heading">
-              DOCULENS
+              DocuLens
             </h1>
             <p className="text-[10px] text-slate-400 font-medium uppercase tracking-widest">
               Evidence Engine
