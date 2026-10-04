@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #EBF3FE;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Theme 1: Sapphire Royal (Default Blue) */
+.theme-sapphire-blue .bg-indigo-600 {
+  background-color: #2563EB !important;
+}
+.theme-sapphire-blue .hover\:bg-indigo-700:hover {
+  background-color: #1D4ED8 !important;
+}
+.theme-sapphire-blue .text-indigo-600 {
+  color: #2563EB !important;
+}
+.theme-sapphire-blue .bg-indigo-50 {
+  background-color: #EFF6FF !important;
+}
+
+/* Theme 2: Cyber Obsidian Dark */
+.theme-cyber-dark {
+  background-color: #090D16 !important;
+  color: #F8FAFC !important;
+}
+
+.theme-cyber-dark main,
+.theme-cyber-dark [class*="bg-[#EBF3FE]"] {
+  background-color: #090D16 !important;
+}
+
+.theme-cyber-dark .bg-white {
+  background-color: #111827 !important;
+  border-color: #1F2937 !important;
+  color: #F3F4F6 !important;
+}
+
+.theme-cyber-dark .bg-slate-50 {
+  background-color: #1F2937 !important;
+  border-color: #374151 !important;
+  color: #F9FAFB !important;
+}
+
+.theme-cyber-dark .bg-indigo-50,
+.theme-cyber-dark .bg-slate-100,
+.theme-cyber-dark .bg-indigo-100 {
+  background-color: #1E293B !important;
+  border-color: #0891B2 !important;
+  color: #38BDF8 !important;
+}
+
+.theme-cyber-dark .text-slate-900 {
+  color: #F8FAFC !important;
+}
+
+.theme-cyber-dark .text-slate-800 {
+  color: #F1F5F9 !important;
+}
+
+.theme-cyber-dark .text-slate-700 {
+  color: #E2E8F0 !important;
+}
+
+.theme-cyber-dark .text-slate-600 {
+  color: #CBD5E1 !important;
+}
+
+.theme-cyber-dark .text-slate-500 {
+  color: #94A3B8 !important;
+}
+
+.theme-cyber-dark .border-slate-200 {
+  border-color: #1E293B !important;
+}
+
+.theme-cyber-dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+.theme-cyber-dark .border-slate-100 {
+  border-color: #1E293B !important;
+}
+
+/* Theme 3: Nordic Emerald */
+.theme-nordic-emerald {
+  background-color: #F0FDF4 !important;
+}
+
+.theme-nordic-emerald .bg-indigo-600 {
+  background-color: #059669 !important;
+}
+
+.theme-nordic-emerald .text-indigo-600 {
+  color: #059669 !important;
+}
+
+.theme-nordic-emerald .bg-indigo-50 {
+  background-color: #ECFDF5 !important;
+}
+
+/* Theme 4: Crimson Radar */
+.theme-crimson-radar {
+  background-color: #FAF5F5 !important;
+}
+
+.theme-crimson-radar .bg-indigo-600 {
+  background-color: #DC2626 !important;
+}
+
+.theme-crimson-radar .text-indigo-600 {
+  color: #DC2626 !important;
+}
+
+.theme-crimson-radar .bg-indigo-50 {
+  background-color: #FEF2F2 !important;
+}
+
+/* Theme 5: Amethyst Violet */
+.theme-amethyst-violet {
+  background-color: #F5F3FF !important;
+}
+
+.theme-amethyst-violet .bg-indigo-600 {
+  background-color: #7C3AED !important;
+}
+
+.theme-amethyst-violet .text-indigo-600 {
+  color: #7C3AED !important;
+}
+
+.theme-amethyst-violet .bg-indigo-50 {
+  background-color: #F3E8FF !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Print Media Styles for Clean PDF Export */
+@media print {
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  aside, header, nav, .no-print {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  main {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+}
